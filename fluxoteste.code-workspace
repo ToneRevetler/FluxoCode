@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "fluxoteste",
+			"path": "."
+		},
+		{
+			"name": "imagens",
+			"path": "../FluxoCode2/assets/imagens"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fluxoteste"
+	}
+}

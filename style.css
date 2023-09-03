@@ -1,0 +1,610 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+:root{
+    --fontH1: 45px;
+    --fontH2: 35px;
+    --fontH3: 25px;
+    --fontH4: 20px;
+    --fontP: 15px;
+
+    --weightH1: 800;
+    --weightH2: 700;
+    --weightH3: 600;
+    --weightH4: 400;
+    --weightP: 400;
+
+    --azul:#0f15c5;
+    --cinzaClaro:#c0c0c0;
+    --cinza:#747474;
+    --cinzaEscuro:#3d3d3d;
+    --cinzaMaisEscuro: #252222;
+    --whatsColor: #25D366;
+    --backFunod: #fff;
+    --orangePage: #ff8c00;
+    --azulEscuro: #050E5C;
+    --black: #000;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    padding: 1%;
+    
+}
+
+.navbar-nav{
+    gap: 2rem;
+    font-size: var(--fontH3);
+    font-weight: 500;
+}
+
+
+nav .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .menu a{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-color{
+    background-color: var(--orangePage);
+    color: var(--backFunod);
+    font-size: var(--fontH3);
+    font-weight: var(--weightH4);
+    border-radius: 22px;
+    color: #fff;
+    min-height: 48px;
+    min-width: 15rem;
+    z-index:999;
+
+    border: 3px solid white;
+    box-shadow: 0.2rem 0.2rem 0.3rem 0.5px var(--cinza);
+}
+
+#logo{
+    background-size: cover;
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.marca{
+    display: flex;
+    color: var(--azul);
+    font-size: 28px;
+    font-weight: 700;
+}
+.marca .marca2{
+    color: var(--black);
+    font-weight: 500;
+}
+
+.sessao1{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(170deg,#050E5C, #1783C0, #fff);
+}
+.sessao1 .welcome{
+    margin-top: 5rem;
+    height: 30rem;
+    min-width: 100%;
+}
+
+h1{
+    color: var(--backFunod);
+    font-size: var(--fontH1);
+    font-weight: var(--weightH1);
+}
+
+h2{
+    margin-top: 1.5rem;
+    font-size: var(--fontH2);
+    font-weight: var(--weightH2);
+    color: var(--azul);
+}
+
+h3{
+    font-size: var(--fontH3);
+    font-weight: var(--weightH3);
+    color: var(--black);
+}
+
+h4{
+    font-size: var(--fontH4);
+    font-weight: var(--fontH4);
+}
+
+.welcome p{
+    font-size: 18px;
+    color: var(--backFunod);
+    font-weight: 400;
+}
+
+p{
+    color: var(--black);
+    font-size: var(--fontP);
+    font-weight: var(--weightP);
+}
+.modelo img{
+    height: 20rem;
+}
+.modelo{
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+.EntreEmCtt{
+    z-index: 999;
+}
+
+.sessao-content i{
+    display: flex;
+    justify-content: center;
+    background-color: var(--orangePage);
+    font-size: var(--fontH2);
+}
+
+/* SESSÃO 2 */
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item{
+    background-color: var(--backFunod);
+}
+.container .intern-session-4{
+    background-image: linear-gradient(170deg,#050E5C, #1783C0, #fff);
+    padding: 1rem;
+    color: var(--backFunod);
+    font-weight: 300;
+}
+
+.icons {
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tall-logo{
+    height: 50px;
+    width: 50px;
+}
+.cor{
+    color: var(--orangePage);
+}
+
+
+
+
+
+
+
+
+
+
+
+.iconW{
+    background-color: #25D366;
+    fill: #f0f8ff;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 2s infinite;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.iconW:hover{
+    width: 25rem;
+    transition: .3s;
+    border-radius: 40px;
+    justify-content: end;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.iconW-text{
+    display: none;
+    margin-left: 10px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 200;
+    white-space: nowrap;
+}
+
+.iconW:hover .iconW-text{
+    display: block;
+    margin-right: 10px;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(7, 94, 84, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(7, 94, 84, 0);
+	}
+    
+	100% {
+        transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(7, 94, 84, 0);
+	}
+}
+
+
+
+@media (min-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        z-index: 0;
+        height: 85px;
+        width: 100%;
+    }
+
+    .textos{
+        padding: 2%;
+        text-align: center;
+    }
+    
+    .textos h2{ 
+        color: var(--orangePage);
+    }
+
+    .textos h3{ 
+        color: var(--azul);
+        font-size: 65px;
+    }
+
+    .sessao1{
+        background-image: linear-gradient(170deg,#050E5C, #1783C0, #fff);
+        width: 100%;
+        height: 45rem;
+        z-index: -1;
+    }
+
+    .OrganizeMain{
+        display: flex;
+        flex-direction: row;
+        gap: 15rem;
+    }
+
+    .LadoEsquerdo{
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 2rem;
+    }
+
+    ul li a{
+        background-color: var(#e4e4e4);
+        border-radius: 18px;
+    }
+
+    ul li a:hover{
+        background-color: var(--cinzaClaro);
+        padding: 8px;
+        transition: 0.7s;
+    }
+    
+
+    .modelo img{
+        position: relative;
+        height:51rem; 
+        width: 46rem;
+        z-index: 0;
+        margin-top:-6rem;
+        clip-path: polygon(43% 0, 61% 0, 100% 60%, 98% 100%, 1% 100%, 3% 40%, 33% 23%);
+    }
+
+    .welcome h1{
+        font-size: 64px;
+        font-weight: var(--weightH3);
+    }
+
+    .welcome p{
+        font-size: var(--fontH3);
+        font-weight: 400;
+        margin-top: 1.5rem;
+    }
+
+    .homeBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 5.5rem;
+        width: 20rem;
+        border-radius: 22px;
+        font-size: var(--fontH2);
+        font-weight: 600;
+    
+        border: 3px solid white;
+        box-shadow: 0.2rem 0.2rem 0.3rem 0.5px var(--cinzaEscuro);
+    }   
+
+    .modelo{
+       margin-bottom: 70rem;
+       height: 45rem;
+       min-width: 35rem;
+       position: relative;
+       margin-bottom: 10%;
+       z-index: 0;
+    } 
+
+    .sessao1-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    /* --------------------------- Nossos Serviços --------------------*/
+
+    .sessaoteste {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+        gap: 2rem;
+    }  
+
+    .sessao-content{
+        color: var(--backFunod);
+        width: 50rem;
+        gap: 3rem;
+    }
+
+    .sessao-content h3{
+        color: var(--azul);
+        font-size: var(--fontH1);
+        margin-top: 1rem;
+    }
+
+    .sessao-content p{
+        color: var(--cinzaEscuro);
+        font-size: var(--fontH4);
+    }
+
+    .sessao-content i{
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        font-size: 45px;
+        
+        display: flex;
+        align-items: center;
+    }
+
+    .sessao2t{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sessao1-div{
+        gap:12rem;
+        display: flex;
+        justify-content: center;
+        height: 40rem;
+
+        position: relative;
+        justify-content: center;
+    }
+
+    .bora{
+        height: 40rem;
+        width: 40rem;
+
+        border-radius: 20px;
+        background-image: url(./assets/imgs/escritorio.jpg);
+        background-size: cover;
+        background-position-x:20%;
+        box-shadow: 0.4rem 0.4rem  0.1rem gray;
+    }
+
+    .bora img{
+        display: none;
+    }
+
+    /* --------------------------- Nossos Parceiros --------------------*/
+
+    .FotoMarconi img{
+            border-radius: 4rem;
+            width: 29rem;
+        }
+
+    .TextoSessao3 h2{
+            color: #000;
+            font-size: 65px;
+            margin-bottom: 2rem;
+        }
+
+    .TextoSessao3 p{
+            color:var(--cinzaEscuro);
+            font-size:var(--fontH3);
+            font-weight: var(--weightH3);
+        }
+        /* --------------------------- Form --------------------*/
+
+    .sessao4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dentroForm{
+        width: 64rem;
+        margin-top: 1.5rem;
+    }
+
+    form{
+        width: 70rem;
+        height: 40rem;
+        background-image: linear-gradient(170deg,#2c4bfc, #1cacff, #b0e2ff);
+        border: 8px solid white;
+        border-radius: 50px;
+        box-shadow: .1rem .1rem 1rem .1rem var(--cinza);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group{
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        outline: 0;
+        border: 1px solid rgba(0, 255, 255, 0.164);
+        border-radius: 8px;
+        color: #f1f1f1;
+        font-size: 15px ;
+        transition: 0.3s;
+        color: var(--cinzaEscuro);
+        resize: none;
+    }
+
+    .abobora{
+        display: flex;
+        justify-content: center;
+    }
+
+    label{
+        height: 100%;
+        position: absolute;
+        left: 10;
+        top: 40;
+        padding: 10px;
+        color: var(--cinzaMaisEscuro);
+        cursor: text;
+        transition: 0.3s;
+    }
+
+    button:hover{
+        background-color: #40da32;
+        transition: 0.5s;
+    }
+
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label{
+        top: -35px;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .row .input-group {
+        flex-basis: 47%;
+    }
+
+
+
+
+
+
+
+    footer{
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .lado1 {
+        float: left;
+        width: 50%;
+        text-align: center;
+      }
+      
+      .meio{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 2rem;
+      }
+
+      .meio a, .meio li{
+        color: var(--cinzaMaisEscuro);
+        text-decoration: none;
+        list-style-type:none;
+      }
+      
+      .lado2 {
+        float: right;
+        width: 50%;
+        text-align: center;
+      }
+
+      form{
+        padding: 1rem;
+        font-size: var(--fontH3);
+        font-weight: var(--weightH3);
+      }
+
+
+      .foot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .direitos, .direitos p{
+        width: 100%;
+        background-color: gray;
+      }
+
+}

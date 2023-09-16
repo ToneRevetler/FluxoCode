@@ -200,15 +200,6 @@ p{
 }
 
 
-
-
-
-
-
-
-
-
-
 .iconW{
     background-color: #25D366;
     fill: #f0f8ff;
@@ -479,6 +470,7 @@ p{
     .dentroForm{
         width: 64rem;
         margin-top: 1.5rem;
+        font-weight: 500;
     }
 
     form{
@@ -528,10 +520,6 @@ p{
         transition: 0.3s;
     }
 
-    button:hover{
-        background-color: #40da32;
-        transition: 0.5s;
-    }
 
     input:focus~label,
     input:valid~label,
@@ -552,10 +540,12 @@ p{
     }
 
 
-
-
-
-
+    .outro{
+        background-color:darkorange;
+        color: white;
+        box-shadow: none;
+        border: 4px solid white;
+    }
 
     footer{
         margin-top: 1.5rem;

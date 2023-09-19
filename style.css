@@ -99,11 +99,27 @@ nav .menu a{
     display: flex;
     justify-content: center;
     background-image: linear-gradient(170deg,#050E5C, #1783C0, #fff);
+
+    padding: 4% 5% 0 5%;
+    width: 100%;
 }
 .sessao1 .welcome{
-    margin-top: 5rem;
-    height: 30rem;
+    margin-top: 1rem;
+    height: 24rem;
     min-width: 100%;
+}
+
+.homeBtn{
+    min-height: 5rem;
+    border-radius: 75px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao{
+    padding-top: 32%;
 }
 
 h1{
@@ -130,8 +146,28 @@ h4{
     font-weight: var(--fontH4);
 }
 
+.OrganizeMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LadoEsquerdo{
+    width: 90%;
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome h1{
+    font-size: 40px;
+}
+
 .welcome p{
-    font-size: 18px;
+    padding-top: 1rem;
+    font-size: 22px;
     color: var(--backFunod);
     font-weight: 400;
 }
@@ -141,8 +177,10 @@ p{
     font-size: var(--fontP);
     font-weight: var(--weightP);
 }
+
 .modelo img{
-    height: 20rem;
+    width: 22rem;
+    padding-top: 1rem;
 }
 .modelo{
     display: flex;
@@ -162,8 +200,73 @@ p{
     display: flex;
     justify-content: center;
     background-color: var(--orangePage);
+    width: 70px;
+    height: 70px;
     font-size: var(--fontH2);
 }
+
+.FotoMarconi img{
+    width: 20rem;
+}
+
+.bora img{
+    display:none;
+}
+
+/* -------------------- SESSAO 1 ----------------------- */
+
+.textosSessao1{
+    padding: 1rem;
+    text-align: center;
+}
+
+.sessao2t h2{
+    font-size: 26px;
+    color: var(--orangePage);
+}
+
+.sessao2t h3{
+    font-size: 36px;
+    color: var(--azul);
+}
+
+
+
+.primeiraSessao{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.primeiraSessao i{
+    border-radius: 50%;
+    align-items: center;
+    color: white;
+}
+
+.conteudoSessao{
+    gap: 1rem;
+    height: 22rem;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudoSessao h3{
+    font-size: 30px;
+    color: var(--azul);
+}
+
+.conteudoSessao p{
+    font-size: 16px;
+    color: var(--cinzaEscuro);
+}
+
+
+
+
+
 
 /* SESSÃO 2 */
 
@@ -459,7 +562,7 @@ p{
             font-size:var(--fontH3);
             font-weight: var(--weightH3);
         }
-        /* --------------------------- Form --------------------*/
+    /* --------------------------- Form --------------------*/
 
     .sessao4{
         display: flex;

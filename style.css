@@ -320,6 +320,7 @@ h3{
     animation: pulse 2s infinite;
     text-decoration: none;
     overflow: hidden;
+    z-index: 999;
 }
 
 .iconW:hover{
@@ -386,7 +387,7 @@ form{
     border-radius: 50px;
     box-shadow: .1rem .1rem 1rem .1rem var(--cinza);
     padding: 2rem;
-    margin: 1rem 0rem 4rem 0;
+    margin: 1rem 0rem 3rem 0;
 
     display: flex;
     flex-direction: column;
@@ -402,15 +403,21 @@ form{
     margin: 0.5rem;
     border-radius: 10px;
     border: white;
-}
-
-placeholder{
-    color: #25D366;
+    padding-left: 0.5rem;
 }
 
 .dentroForm label{
     display: none;
 }
+
+textarea{
+    width: 14.4rem;
+    margin:0.7rem 0rem 0rem 0.4rem;
+    border: none;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+}
+
 
 .dentroForm{
     display: flex;
@@ -418,7 +425,79 @@ placeholder{
     justify-content: center;
     flex-direction: column;
 }
+form .homeBtn{
+    background-color: var(--orangePage);
+    color: white;
+    width: 13rem;
+    border-radius: 35px;
+    border: white solid 3px;
 
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 2rem;
+}
+
+
+
+footer .container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+footer .lado1{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+footer a{
+    order: 2;
+}
+
+footer li{
+    margin: 0.4rem;
+}
+
+footer .termos{
+    padding-bottom: 1rem;
+}
+
+footer .lado2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .lado2 h4{
+    order: 3;
+    font-size: 18px;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+footer .icons{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+.direitos{
+    height: 5rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.direitos p{
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+}
 
 
 @keyframes pulse {
@@ -437,14 +516,6 @@ placeholder{
 		box-shadow: 0 0 0 0 rgba(7, 94, 84, 0);
 	}
 }
-
-
-
-
-
-
-
-
 
 
 

@@ -135,12 +135,6 @@ h2{
     color: var(--azul);
 }
 
-h3{
-    font-size: var(--fontH3);
-    font-weight: var(--weightH3);
-    color: var(--black);
-}
-
 h4{
     font-size: var(--fontH4);
     font-weight: var(--fontH4);
@@ -213,6 +207,8 @@ p{
     display:none;
 }
 
+
+
 /* -------------------- SESSAO 1 ----------------------- */
 
 .textosSessao1{
@@ -220,13 +216,12 @@ p{
     text-align: center;
 }
 
-.sessao2t h2{
+.sessao2t h2, h2{
     font-size: 26px;
     color: var(--orangePage);
 }
-
-.sessao2t h3{
-    font-size: 36px;
+h3{
+    font-size: 32px;
     color: var(--azul);
 }
 
@@ -269,6 +264,13 @@ p{
 
 
 /* SESSÃO 2 */
+
+.textossessao2{
+    text-align: center;
+
+    padding-bottom: 2rem;
+}
+
 
 .textos{
     display: flex;
@@ -343,6 +345,81 @@ p{
     margin-right: 10px;
 }
 
+.sessao3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerFotoETexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFotoMarconi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.FotoMarconi img{
+    width: 17rem;
+    border-radius: 15px;
+}
+
+.TextoSessao3 h2{
+    max-width: 17rem;
+    color: var(--cinzaMaisEscuro);
+}
+
+/* --------------------------------------SESSAO 4----------------------------------------- */
+
+
+form{
+    width: 19rem;
+    height: 33rem;
+    background-image: linear-gradient(170deg,#2c4bfc, #1cacff, #b0e2ff);
+    border: 8px solid white;
+    border-radius: 50px;
+    box-shadow: .1rem .1rem 1rem .1rem var(--cinza);
+    padding: 2rem;
+    margin: 1rem 0rem 4rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.dentroForm input{
+    margin: 0.5rem;
+    border-radius: 10px;
+    border: white;
+}
+
+placeholder{
+    color: #25D366;
+}
+
+.dentroForm label{
+    display: none;
+}
+
+.dentroForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 
 @keyframes pulse {
     0% {
@@ -360,6 +437,18 @@ p{
 		box-shadow: 0 0 0 0 rgba(7, 94, 84, 0);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
